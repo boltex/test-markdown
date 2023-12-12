@@ -1,6 +1,5 @@
 # TypeScript Pro-Tips
 
-
 ## Table of Content
 
 - [Type Tranformations](#type-transformations-↩)
@@ -60,7 +59,6 @@
   16. [Narrow down a returned value type with 'as' & 'Extract'](#narrow-down-a-returned-value-type-with-as--extract-↩)
 
 # Type Transformations [↩](#)
-
 
 ## Utility type "ReturnType" and "typeof" [↩](#)
 
@@ -209,7 +207,6 @@ Easy! Just index it with its keys!
 `type UnionType = { [key in keyof OtherObjectType] }[ keyof OtherObjectType ]`
 
 # Generics [↩](#)
-
 
 ## Generics for callable objects (functions) [↩](#)
 
@@ -366,7 +363,6 @@ export function compose<T1, T2, T3>(
 ```
 
 # Advanced Patterns [↩](#)
-
 
 ## Branded Types [↩](#)
 
@@ -616,4 +612,3 @@ const getFruit = <TName extends TFruits[number]["name"]>(name: TName) => {
   >;
 };
 ```
-
